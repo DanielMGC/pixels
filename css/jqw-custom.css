@@ -1,0 +1,56 @@
+@import url(//fonts.googleapis.com/css?family=Geo&subset=latin);
+
+input[type="text"].jqx-input, 
+input[type="password"].jqx-input {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Geo', serif;
+    font-size: 1.5rem;
+    border: none;
+}
+
+input[type="text"].jqx-input.font-big {
+    font-size: 3rem;
+}
+
+input[type="text"].jqx-input.font-small {
+    font-size: 1rem;
+}
+
+input[type="text"].jqx-input.invisible {
+    min-height: 1px;
+    min-width: 1px;
+    width: 1px;
+    height: 1px;
+    color: #000000;
+    opacity: 0;
+}
+
+.jqx-input-metrodark {
+    font-family: 'Geo', serif;
+    font-size: 1.5rem;
+}
+
+.jqx-dropdownlist-content {
+    font-size: 2.5rem !important;
+}
+
+.jqx-rc-all {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.jqx-color-picker-panel {
+    font-size: 3.5rem;
+}
+
+.jqx-color-picker input:nth-child(2),
+.jqx-color-picker input:nth-child(4) {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.jqx-color-picker input:nth-child(6) {
+    margin-left: 4px;
+}

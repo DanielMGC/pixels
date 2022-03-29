@@ -1,0 +1,440 @@
+@import url(//fonts.googleapis.com/css?family=Geo&subset=latin);
+
+* {
+    font-family: 'Geo', serif;
+    font-size: 62.5%;
+	margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body, html {    
+    height: 100%;
+    background-color: #000000;
+}
+
+.bg {
+    background-image: url("../images/background-v2.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.canvas-draw {
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #444444;
+    border-top-width: 0px;
+    border-left-width: 0px;
+}
+
+.canvas-preview {
+    width: 96px;
+    height: 96px;
+}
+.canvas-preview.small {
+    width: 48px;
+    height: 48px;
+}
+
+.canvas-view {
+    width: 320px;
+    height: 320px;
+}
+
+.canvas-view.medium {
+    width: 160px;
+    height: 160px;
+}
+
+.center {
+    height: 100%; 
+    width: 90%;
+    background-color: #000000;
+    margin: auto;
+    max-width: 800px;
+    /*min-width: 700px;*/
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.div-area-search {
+    height: 30px;
+}
+
+.div-button {
+    border: solid 2px #444444;
+    text-align: center;
+    padding: 3px 5px;
+    min-height: 8px;
+    min-width: 8px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 2px;
+    vertical-align: top;
+    font-size: 2rem;
+}
+
+.div-button.sel,
+.div-button:hover {
+    border-color: #ffffff;
+}
+.div-button.sel-blue {
+    border-color: #b4f4ff;
+}
+
+.div-button.disabled {
+    border-color: #181818;
+    cursor: default;
+    color: #a5a5a5
+}
+
+.div-center {
+    margin: auto;
+    /*width: 320px;*/
+    width: 100%;
+    max-width: 320px;
+    font-size: 3rem;
+    height: auto;
+    display: table;
+}
+
+.div-center.large {
+    /*width: 720px;*/
+    width: 100%;
+    max-width: 720px;
+}
+
+.div-center p{
+    width: auto;
+    display: inline-block;
+}
+
+.div-color-square {
+    height: 14px;
+    width: 14px;
+    margin: 2px;
+    float: left;
+    border: 1px solid #777777;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.div-color-square.sel{
+    margin: 1px;
+    border: 2px solid #ffffff;
+}
+
+.div-item-button{
+    width: 55px;
+    height: 43px;
+    padding-top: 5px;
+    float: right;
+}
+
+.div-item-button.small{
+    width: 22px;
+    float: left;
+}
+
+.div-item-canvas {
+    width: 48px;
+    height: 48px;
+    float: left;
+}
+
+.div-item-name{
+    width: calc(100% - 103px);
+    height: 43px;
+    padding-top: 5px;
+    float: left;
+}
+
+.div-item-name.small{
+    width: 120px;
+}
+
+.div-item-name span{
+    display: block;
+    font-size: 1.5rem;
+}
+
+.div-list-item {
+    /*width: 400px;*/
+    width: 100%;
+    height: 48px;
+    margin: auto;
+}
+ 
+.div-item-select-area {
+    border: solid transparent 2px;
+    cursor: pointer;
+    float: right;
+    height: 48px;
+}
+
+.div-item-select-area.sel {
+    border: solid #ffffff 2px;
+}
+
+.div-list-item.small {
+    width: 194px;
+}
+
+.head .div-list-item .div-item-button {
+    background-image: url('../images/btn-face.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.body .div-list-item .div-item-button {
+    background-image: url('../images/btn-body.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.arm .div-list-item .div-item-button {
+    background-image: url('../images/btn-arms.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.leg .div-list-item .div-item-button {
+    background-image: url('../images/btn-legs.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.div-preview {
+    width: 96px;
+    height: 96px;
+    border: none;
+    background-color: #171717;
+    margin: auto;
+}
+
+.div-preview.small {
+    width: 48px;
+    height: 48px;
+}
+
+.div-side {
+    width: 199px;
+    min-height: 100px;
+    margin: auto;
+}
+
+.div-tool-area {
+    height: 22px;
+    float: left;
+    width: 169px;
+    padding-left: 2px;
+}
+
+.div-username {
+    margin: auto;
+    width: 100%;
+    height: 20px;
+    color: #2AE900;
+    font-size: 1.5rem;
+    padding-top: 2px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.div-view {
+    width: 160px;
+    height: 160px;
+    border: none;
+    background-color: #171717;
+    margin: auto;
+}
+
+.div-view-middle {
+    width: 320px;
+    /*float: left;*/
+    display: inline-block;
+}
+
+.div-draw-middle {
+    width: 320px;
+    margin: auto;
+}
+
+.error {
+    color: #f04545;
+    font-size: 1.5rem;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.font-big {
+    font-size: 3rem;
+}
+
+.font-med {
+    font-size: 2rem;
+}
+
+.font-med-small {
+    font-size: 1.5rem;
+}
+
+.font-med-small a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #45d6f0;
+}
+
+.font-small {
+    font-size: 1rem;
+}
+
+.header-title {
+    margin: auto;
+    padding-top: 10px;
+    width: auto;
+    display: table;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.jqx {
+    display: inline-block;
+}
+
+.label-author {
+    color: #45d6f0;
+    font-size: 1.5rem;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.margin-left-2 {
+    margin-left: 2px;
+}
+
+.margin-left-5 {
+    margin-left: 5px;
+}
+
+.margin-top-2 {
+    margin-top: 2px;
+}
+
+.margin-top-3 {
+    margin-top: 3px;
+}
+
+.margin-top-5 {
+    margin-top: 5px;
+}
+
+.margin-top-7 {
+    margin-top: 7px;
+}
+
+.margin-top-8 {
+    margin-top: 8px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-12 {
+    margin-top: 12px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.span-approved.approved {
+    color: #2AE900;
+}
+
+.span-approved.pending {
+    color: #45d6f0;
+}
+
+.span-approved.rejected {
+    color: #f04545;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-green {
+    color: #2AE900;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.width-80 {
+    width: 80px;
+}
+
+.width-90 {
+    width: 90px;
+}
+
+.width-80pct {
+    width: 80%;
+}
+
+#ddbColor {
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 768px) {    
+    .display-inline-block-desktop {
+        display: inline-block;
+    }
+    .float-left-desktop {
+        float: left;
+    }
+    .float-right-desktop {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 767px) {    
+    .display-none-mobile {
+        display: none;
+    }
+
+    .div-side {
+        width: 90%;
+        min-height: 100px;
+        margin: auto;
+    }
+}
