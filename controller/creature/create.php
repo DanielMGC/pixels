@@ -70,10 +70,10 @@ if(
     $newId = $creature->create();
     if($newId > 0){
 
-        $html = $mailer->GetTemplateCreated();
-        $html = str_replace("[NAME]", $data->name, $html);
-        $html = str_replace("[ID]", $newId, $html);
-        $ok = $mailer->SendMail("New Pixel Creature created!", $html, "daniel.moises.gc@gmail.com");
+        //$html = $mailer->GetTemplateCreated();
+        //$html = str_replace("[NAME]", $data->name, $html);
+        //$html = str_replace("[ID]", $newId, $html);
+        //$ok = $mailer->SendMail("New Pixel Creature created!", $html, "daniel.moises.gc@gmail.com");
  
         // set response code - 201 created
         //http_response_code(201);

@@ -79,7 +79,7 @@ if(
 
     // create the product
     if($creature->update()){
-        if($sendMailApproved) {
+        /*if($sendMailApproved) {
             if($creature->approved > 0) {
                 $code = $Crypto->encrypt($data->id . ";" . $data->id . ";" . $data->id . ";" . $data->id);
 
@@ -94,7 +94,7 @@ if(
                 $html = str_replace("[ID]", $data->id, $html);
                 $ok = $mailer->SendMail("Pixel Creature rejected", $html, $data->authorEmail);
             }
-        }
+        }*/
  
         // set response code - 201 created
         //http_response_code(201);
