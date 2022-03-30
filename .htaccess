@@ -3,4 +3,4 @@
 Order allow,deny
 Deny from all
 </FilesMatch>
-php_value max_input_vars 10000
+max_input_vars 10000
